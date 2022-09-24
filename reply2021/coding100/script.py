@@ -16,7 +16,7 @@ maze_map = []
 maze = open("maze.txt", "r")
 for content in maze.read().splitlines():
     maze_map.append(list(content))
-print(maze_map)
+# print(maze_map)
 
 for line in map.read().splitlines():
     # print('phase' + str(phase) + ', reading: ' + line)
@@ -33,7 +33,6 @@ for line in map.read().splitlines():
         finish_flag = line
     elif (phase == 5):
 
-        # Flags diff
         maze = open("maze.txt", "r")
         flag_start_column = 0
         flag_start_line = 0
